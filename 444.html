@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <video id="myVideo" width="320" height="240">
+    <source src="德国的小提琴王子演绎Coldplay的《viva la vida》，视觉效果炸天了.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <button onclick="playVideo()">播放</button>
+  <button onclick="stopVideo()">结束</button>
+
+  <script>
+    var video = document.getElementById('myVideo');
+
+    function playVideo() {
+      video.play();
+    }
+
+    function stopVideo() {
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+
+</body>
+
+</html>
